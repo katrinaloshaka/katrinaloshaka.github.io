@@ -1,0 +1,253 @@
+@font-face {
+    font-family: katrina;
+    src: url(fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3d;
+    src: url(fonts/DERRIDA.TTF);
+}
+
+body {
+    background-size: 400% 400%;
+    background-color: #B71E66;
+    background-image: linear-gradient(#B71E66, #000000, #000000, #000000, #000000);
+}
+
+
+/*MENU*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
+}
+
+.grid-item {
+    font-size: 30px;
+    font-family: katrina;
+    text-align: center;
+    color: white;
+
+
+}
+
+a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
+.grid-item:hover {
+    font-size: 30.5px;
+    cursor: pointer;
+
+
+}
+
+
+/*MENU END*/
+
+
+.logo {
+    display: block;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: logo;
+}
+
+.katrina {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: katrina;
+}
+
+
+.graph {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: graph;
+    margin-bottom: 20px;
+}
+
+.skills {
+    color: white;
+    font-family: katrina;
+    font-size: 200%;
+    margin-left: 40px;
+    grid-area: skills;
+}
+
+.ten {
+    color: white;
+    font-family: katrina;
+    font-size: 30px;
+    text-align: center;
+    border: solid white;
+    grid-area: cv;
+    width: 200px;
+    height: 50px;
+    margin-left: 40%;
+
+
+
+}
+
+.free {
+    color: white;
+    font-family: katrina;
+    font-size: 30px;
+    text-align: center;
+    grid-area: free;
+}
+
+
+/*HOVER OVER EFFECT*/
+.hoverover {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+}
+
+.centerText {
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hoverover:hover .centerText {
+    opacity: 1;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    padding: 16px 32px;
+    font-family: katrina;
+}
+
+
+
+
+/*IMG*/
+.one img {
+    width: 100%;
+}
+
+.two img {
+    width: 100%
+}
+
+.three img {
+    width: 100%
+}
+
+.four img {
+    width: 100%
+}
+
+.five img {
+    width: 100%
+}
+
+.six img {
+    width: 100%
+}
+
+.seven img {
+    width: 100%;
+}
+
+.eight img {
+    width: 100%;
+}
+
+/*HOVER OVER EFFECT END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px;
+        grid-auto-rows: repeat(6, minmax(100px, auto));
+    }
+    .free{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .nine{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .ten{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .eight {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .seven {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .one {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .two {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .three {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .four {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .five {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .six {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    
+
+
+}

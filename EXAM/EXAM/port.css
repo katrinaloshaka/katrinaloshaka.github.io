@@ -1,0 +1,99 @@
+@font-face {
+    font-family: katrina;
+    src: url(fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3d;
+    src: url(fonts/DERRIDA.TTF);
+}
+
+body {
+    background-size: 400% 400%;
+    background-color: #B71E66;
+    background-image: linear-gradient(#B71E66, #000000, #000000, #000000, #000000);
+}
+
+.logo {
+    display: block;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: logo;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
+}
+
+.grid-item {
+    font-size: 30px;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: katrina;
+    text-align: center;
+    color: white;
+
+
+}
+
+a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
+.grid-item:hover {
+    font-size: 30.5px;
+    cursor: pointer;
+
+
+}
+
+.bw{
+    width: 100%;
+    
+}
+
+.ba{
+    width: 100%;
+    
+}
+
+.bc{
+    width: 100%;
+}
+
+.bu{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
